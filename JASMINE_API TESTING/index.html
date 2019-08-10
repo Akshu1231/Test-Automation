@@ -1,0 +1,44 @@
+<html>
+<head>
+<script type="text/javascript" > </script>
+
+<script>
+
+    
+
+
+   var output = [];
+
+   $.getJSON('output.json', function(data) {console.log(data);
+   
+       data=JSON.parse(data);
+       
+          var tblRow = "<tr>" + "<td>" + data.totalRequests + "</td>" +
+           "<td>" + data.totalRequests + "</td>" + "<td>" + data.totalRequests + "</td>" + "<td>" + data.totalRequests + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+
+   });
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>Table Name</th>
+            <th>Method</th>
+            <th>Total Requests</th>
+            <th>Total Errors</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>

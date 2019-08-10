@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for backend/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">backend/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/32</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >var request = require('request');</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function random_address(address) {</span></span>
+<span class="cstat-no" title="statement not covered" >  return address[Math.floor(Math.random() * address.length)];</span>
+}
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function random_students(students) {</span></span>
+<span class="cstat-no" title="statement not covered" >  return students[Math.floor(Math.random() * students.length)];</span>
+}
+<span class="cstat-no" title="statement not covered" >const qualification = [{ qualification: "MCA" }, { qualification: "BCA" }, { qualification: "B.TECH" }, { qualification: "MBA" }, { qualification: "B.A" }, { qualification: "M.A" }, { qualification: "B.COM" }]</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function random_skills(skills) {</span></span>
+<span class="cstat-no" title="statement not covered" >  return skills[Math.floor(Math.random() * skills.length)];</span>
+}
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function random_qualification(qualification) {</span></span>
+<span class="cstat-no" title="statement not covered" >  return qualification[Math.floor(Math.random() * qualification.length)];</span>
+}
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function random_gpa() {</span></span>
+<span class="cstat-no" title="statement not covered" >  return gpa[Math.floor(Math.random() * gpa.length)];</span>
+}
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function random_project() {</span></span>
+<span class="cstat-no" title="statement not covered" >  return project[Math.floor(Math.random() * project.length)];</span>
+}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >const gpa = [{ gpa: "1" }, { gpa: "2" }, { gpa: "3" }, { gpa: "4" }, { gpa: "5" }, { gpa: "6" }, { gpa: "7" }, { gpa: "8" }, { gpa: "9" }]</span>
+<span class="cstat-no" title="statement not covered" >const skills = [{ skills: "c++" }, { skills: "java" }, { skills: "python" }, { skills: "kotlin" }, { skills: "sql" }, { skills: "swift" }, { skills: "c#" }, { skills: "php" }, { skills: "jsp" }, { skills: "web programming" }, { skills: "html" }, { skills: "node" }, { skills: "react" }, { skills: "ruby" }]</span>
+<span class="cstat-no" title="statement not covered" >const address = [{ address: "123" }, { address: "456" }, { address: "556" }, { address: "999" }, { address: "149" }, { address: "584" }, { address: "695" }, { address: "795" }, { address: "505" }];</span>
+<span class="cstat-no" title="statement not covered" >const project = [{ project: "panasonic" }, { project: "LED" }, { project: "DELL" }, { project: "APPLE" }, { project: "SAMSUNG" }, { project: "Mi" }, { project: "NOKIA" }, { project: "LENOVO" }, { project: "HP" }, { project: "LED" }]</span>
+<span class="cstat-no" title="statement not covered" >const students = [</span>
+  { name: "roy", gender: "male", email: "roy@gmail.com", phone: "9999999901" },
+  { name: "lily", gender: "female", email: "lily@hmail.com", phone: "9999999902" },
+  { name: "popy", gender: "male", email: "popy@gmail.com", phone: "9999999903" },
+  { name: "Jack", gender: "male", email: "jack@gmail.com", phone: "9999999904" },
+  { name: "rom", gender: "male", email: "rom@gmail.com", phone: "9999999905" },
+  { name: "rock", gender: "male", email: "rock@gmail.com", phone: "9999999906" },
+  { name: "ram", gender: "male", email: "ram@gmail.com", phone: "9999999907" },
+  { name: "fara", gender: "female", email: "fara@gmail.com", phone: "9999999908" },
+  { name: "zoli", gender: "female", email: "zoli@gmail.com", phone: "9999999909" },
+  { name: "sana", gender: "female", email: "sana@gmail.com", phone: "2999994150" },
+  { name: "naveen", gender: "male", email: "naveen@gmail.com", phone: "399995240" },
+  { name: "ankit", gender: "male", email: "ankit@gmail.com", phone: "4999996240" },
+  { name: "amit", gender: "male", email: "amit@gmail.com", phone: "5999997240" },
+  { name: "kavi", gender: "female", email: "kavi@gmail.com", phone: "6999998240" },
+  { name: "sachin", gender: "male", email: "sachin@gmail.com", phone: "7999999240" },
+  { name: "ajit", gender: "male", email: "sachin@gmail.com", phone: "7999999240" },
+  { name: "Ramesh", gender: "male", email: "ramesh@gmail.com", phone: "7999999240" },
+  { name: "sanchit", gender: "male", email: "sanchit@gmail.com", phone: "7999999240" },
+  { name: "rakesh", gender: "male", email: "sachin@gmail.com", phone: "7999999240" },
+  { name: "manish", gender: "male", email: "sachin@gmail.com", phone: "7999999240" },
+  { name: "pranav", gender: "male", email: "pranav@gmail.com", phone: "7999999240" },
+  { name: "tarun", gender: "male", email: "tarun@gmail.com", phone: "7999999240" },
+  { name: "abhi", gender: "male", email: "abhi@gmail.com", phone: "7999999240" },
+  { name: "shivi", gender: "female", email: "shivi@gmail.com", phone: "7999999240" },
+  { name: "Loki", gender: "male", email: "loki@gmail.com", phone: "7999999240" },
+  { name: "spider", gender: "male", email: "spider@gmail.com", phone: "7999999240" },
+  { name: "ironman", gender: "male", email: "iron@gmail.com", phone: "7999999240" },
+  
+  
+&nbsp;
+];
+&nbsp;
+<span class="cstat-no" title="statement not covered" >for (i = 1; i &lt; 5; i++) {</span>
+<span class="cstat-no" title="statement not covered" >  var stu = {};</span>
+<span class="cstat-no" title="statement not covered" >  setTimeout(()=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >    stu = JSON.parse(JSON.stringify(random_students(students)));</span>
+    // console.log(stu)
+<span class="cstat-no" title="statement not covered" >    stu['qualification'] = random_qualification(qualification)['qualification'];</span>
+<span class="cstat-no" title="statement not covered" >    stu['address'] = random_address(address)['address'];</span>
+<span class="cstat-no" title="statement not covered" >    stu['skills'] = random_skills(skills)['skills'];</span>
+<span class="cstat-no" title="statement not covered" >    stu['gpa'] = random_gpa()['gpa'];</span>
+<span class="cstat-no" title="statement not covered" >    stu['experience'] = Math.floor(Math.random() * 20).toString();</span>
+<span class="cstat-no" title="statement not covered" >    stu['project'] = random_project(project)['project'];</span>
+<span class="cstat-no" title="statement not covered" >     stu['phone'] = Math.floor(Math.random() * 10000000000).toString();</span>
+<span class="cstat-no" title="statement not covered" >    stu['email'] = stu.email.replace('@', '_' + i + '@');</span>
+<span class="cstat-no" title="statement not covered" >    console.log(stu);</span>
+&nbsp;
+    // var options = {
+    //   url: 'http://localhost:3000/students',
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   json: stu
+    // };
+    // request(options, function (err, res, body) {
+    //   if (res &amp;&amp; (res.statusCode === 200 || res.statusCode === 201)) {
+    //     console.log(body);
+    //   }
+    // });
+  },20);
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jul 18 2019 17:36:58 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Options parameter for models in different method calls:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "test-cover": "istanbul cover --include-all-sources node_modules/jasmine-node/bin/jasmine-node spec/*spec.js && istanbul check-coverage"
+  },
+  "keywords": [
+    "S2IC",
+    "web"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.4.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "jasmine-node": "^3.0.0",
+    "jasmine-supertest": "^1.0.0",
+    "mongoose": "^5.6.4",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "jsonfile": "^5.0.0",
+    "loadtest": "^3.0.7",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "mysql": "^2.17.1",
+    "querystring-browser": "^1.0.4",
+    "request": "^2.88.0",
+    "swagger-ui-express": "^4.0.7"
+  }
+}
